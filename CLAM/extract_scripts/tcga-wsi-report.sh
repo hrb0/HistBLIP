@@ -1,11 +1,11 @@
 #!/bin/bash
-DIR_TO_COORDS="/data3/Thanaporn/kmedicon/patches/"
-DATA_DIRECTORY="/data3/Thanaporn/kmedicon/WSIs"
-CSV_FILE_NAME="/data3/Thanaporn/kmedicon/wsi_report_data.csv"
+DIR_TO_COORDS="/data/path/to/patches/"
+DATA_DIRECTORY="/data/path/to/WSIs"
+CSV_FILE_NAME="/data/path/to/wsi_report_data.csv"
 FEATURES_DIRECTORY=$DIR_TO_COORDS
 ext=".tif"
 save_storage="No"
-root_dir="/data3/Thanaporn/kmedicon/logs/WSI-Report_log_"
+root_dir="/data/path/to/logs/"
 
 # models="resnet50"
 #models="ctranspath"

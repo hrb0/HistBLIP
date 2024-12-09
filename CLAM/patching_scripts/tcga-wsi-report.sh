@@ -1,10 +1,10 @@
 export OPENCV_IO_MAX_IMAGE_PIXELS=10995116277760
 
-source_dir="/data3/Thanaporn/kmedicon/WSIs"
+source_dir="/data/path/to/WSIs"
 wsi_format="tif"
 
 patch_size=512
-save_dir="/data3/Thanaporn/kmedicon/dinov2_vitl"
+save_dir="/data/path/to/dinov2_vitl"
 python create_patches_fp.py \
     --source $source_dir \
     --save_dir $save_dir\

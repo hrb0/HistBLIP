@@ -5,8 +5,8 @@ region_size=96
 prototype_num=768
 
 CUDA_VISIBLE_DEVICES=5 python main_train_AllinOne.py \
-    --image_dir /data2/yumi/kmedicon/patch_0920/pt_files/ \
-    --ann_path /data2/yumi/kmedicon/annotation_ku677.json \
+    --image_dir /data/path/to/pt_files/ \
+    --ann_path /data/path/to/annotation.json \
     --dataset_name wsi_report \
     --model_name $model \
     --max_seq_length $max_length \
@@ -22,7 +22,7 @@ CUDA_VISIBLE_DEVICES=5 python main_train_AllinOne.py \
     --eos_idx 35233 \
     --region_size $region_size \
     --prototype_num $prototype_num \
-    --save_dir /data3/Thanaporn/kmedicon/Report/logs_BLIP_base_KU_patch_ep70_b10 \
+    --save_dir /data/path/to/logs \
     --step_size 1 \
     --gamma 0.8 \
     --seed 456789 \
